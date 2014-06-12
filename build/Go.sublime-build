@@ -1,0 +1,11 @@
+{
+	"cmd": ["/usr/local/go/bin/go", "run", "$file"],
+	"selector": "source.go",
+	"variants":
+    [
+        {
+            "name": "Stop",
+            "cmd": ["sh", "/Users/liudan/Documents/profile/kill_go.sh", "$file_name", "$file_base_name"]
+        }
+    ]
+}
