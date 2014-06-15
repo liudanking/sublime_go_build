@@ -4,8 +4,12 @@
 	"variants":
     [
         {
-            "name": "Stop",
-            "cmd": ["sh", "/Users/liudan/Documents/profile/kill_go.sh", "$file_name", "$file_base_name"]
+            "name": "Stop-sh",
+            "cmd": ["sh", "<your_path_to_kill_go.sh>", "$file_name", "$file_base_name"]
+        },
+        {
+            "name": "Stop-Go",
+            "cmd": ["sh", "-c", "<your_path_to_kill_go> $file_name exe/$file_base_name"]
         }
     ]
 }
